@@ -61,7 +61,13 @@ public class CameraManager : MonoBehaviour
             SetCurrentCamera();
         }
 
-        if (_temporaryMousePos == Input.mousePosition && Time.time >_canPlayCinematicCamera
+        MouseKeyCodeChecking();
+
+    }
+
+    private void MouseKeyCodeChecking()
+    {
+        if (_temporaryMousePos == Input.mousePosition && Time.time > _canPlayCinematicCamera
         || !Input.anyKeyDown && Time.time > _canPlayCinematicCamera)
         {
             if (_cameracinematicDirector.state == PlayState.Playing)
@@ -75,7 +81,6 @@ public class CameraManager : MonoBehaviour
                 _shipViews[0].SetActive(true);
                 _cameracinematicDirector.Play();
                 _canPlayCinematicCamera = Time.time + _timeRate;
-                Debug.Log("Play Director:");
             }
         }
 
@@ -86,12 +91,7 @@ public class CameraManager : MonoBehaviour
             _temporaryMousePos = Input.mousePosition;
             _canPlayCinematicCamera = Time.time + _timeRate;
         }
-
-        //when player hasnot moved the mouse 
-        //or pressed a key within 5 seconds
-        //have cinematic camera
     }
-
 
     public void SetPriorityDefault()
     {
