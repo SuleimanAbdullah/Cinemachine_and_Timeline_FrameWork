@@ -18,11 +18,11 @@ MonoBehaviour:
       Amplitude: 1
       Constant: 0
     Y:
-      Frequency: 3
+      Frequency: 4
       Amplitude: 1
       Constant: 0
     Z:
-      Frequency: 5
+      Frequency: 6
       Amplitude: 1
       Constant: 0
   OrientationNoise: []

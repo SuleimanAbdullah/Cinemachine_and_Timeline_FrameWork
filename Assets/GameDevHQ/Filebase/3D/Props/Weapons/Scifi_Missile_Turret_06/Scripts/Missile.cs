@@ -26,7 +26,7 @@ namespace GameDevHQ.FileBase.Missile_Launcher.Missile
 
         private Rigidbody _rigidbody; //reference to the rigidbody of the rocket
         private AudioSource _audioSource; //reference to the audiosource of the rocket
-        
+
         private bool _launched = false; //bool for if the rocket has launched
         private float _initialLaunchTime = 2.0f; //initial launch time for the rocket
         private bool _thrust; //bool to enable the rocket thrusters
@@ -85,7 +85,7 @@ namespace GameDevHQ.FileBase.Missile_Launcher.Missile
                 _thrust = false; //set thrust bool to false
                 _trackRotation = true; //track rotation bool set to true
             }
-             
+
             if (_trackRotation == true) //check track rotation bool
             {
                 if (_missileType == Missile_Launcher.MissileType.Normal) //checking for normal missile 
@@ -129,13 +129,7 @@ namespace GameDevHQ.FileBase.Missile_Launcher.Missile
 
         private void OnCollisionEnter(Collision other)
         {
-            
-            
-            if (_hitCounter ==2)
-            {
-                Destroy(other.gameObject); //destroy collided object
-            }
-            
+            //Destroy(other.gameObject); //destroy collided object
 
             if (_explosionPrefab != null)
                 Instantiate(_explosionPrefab, transform.position, Quaternion.identity); //instantiate explosion

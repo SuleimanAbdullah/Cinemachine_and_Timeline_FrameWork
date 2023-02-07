@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 114093734042214528}
   - component: {fileID: 622995038246941556}
   - component: {fileID: 6725763651941407698}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Missle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65,7 +65,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 378daef2a0e5f4abe8e7f420838eab41, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.659
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -206,7 +206,7 @@ MonoBehaviour:
     m_ImpulseType: 3
     m_DissipationRate: 0.25
     m_RawSignal: {fileID: 11400000, guid: dd65ee5d160fbe64aac1a81fce96bcaa, type: 2}
-    m_AmplitudeGain: 1
+    m_AmplitudeGain: 3
     m_FrequencyGain: 1
     m_RepeatMode: 0
     m_Randomize: 1
@@ -236,7 +236,7 @@ MonoBehaviour:
   m_DefaultVelocity: {x: 0, y: -1, z: 0}
   m_LayerMask:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 256
   m_IgnoreTag: 
   m_UseImpactDirection: 0
   m_ScaleImpactWithMass: 0

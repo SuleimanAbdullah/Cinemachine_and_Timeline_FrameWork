@@ -9777,7 +9777,8 @@ GameObject:
   - component: {fileID: 4019497043458186}
   - component: {fileID: 82742922228431678}
   - component: {fileID: -1904706064926605164}
-  m_Layer: 0
+  - component: {fileID: 5316206000227252381}
+  m_Layer: 8
   m_Name: Explosion1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9911,6 +9912,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 226c2c7472c4aa34e983cd0f0b0a583b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &5316206000227252381
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1567341239667122}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1580507666746332
 GameObject:
   m_ObjectHideFlags: 0
